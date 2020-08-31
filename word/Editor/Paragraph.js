@@ -3947,7 +3947,6 @@ Paragraph.prototype.Add = function(Item)
 				var MathElement = new ParaMath();
 				MathElement.Root.Load_FromMenu(Item.Menu, this, null, Item.GetText());
 				MathElement.Root.Correct_Content(true);
-				this.m_oPRSW.SetMathRecalcInfoObject(MathElement);
 
 				this.Internal_Content_Add(CurPos + 1, MathElement);
 
