@@ -645,7 +645,7 @@ Paragraph.prototype.private_RecalculatePage            = function(CurPage, bFirs
 
     if (false !== bFirstRecalculate)
     {
-        PRS.ResetMathRecalcInfo();
+        // PRS.ResetMathRecalcInfo();
         PRS.Reset_MathRecalcInfo();
 		PRS.SaveFootnotesInfo();
     }

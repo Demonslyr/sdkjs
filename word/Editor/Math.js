@@ -1796,7 +1796,7 @@ ParaMath.prototype.Recalculate_Range = function(PRS, ParaPr, Depth)
 	var bCurrentObj    = PrevLineObject == null || PrevLineObject == this;
 	var PrevObject     = bCurrentObj ? null : PrevLineObject;
 
-    var bStartRecalculate = PrevLineObject == null && true == bStartRange && PRS.bFastRecalculate == false;
+    var bStartRecalculate = /*PrevLineObject == null &&*/ true == bStartRange && PRS.bFastRecalculate == false;
     var bContinueRecalc   = !isInline && PRS.bContinueRecalc === true;
 
     var LDRecalcInfo  = this.Paragraph.Parent.RecalcInfo;
